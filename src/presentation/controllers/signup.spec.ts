@@ -1,6 +1,6 @@
 import { SignUpController } from './signup'
 import { InvalidParamError, MissingParamError, ServerError } from '../errors/'
-import { EmailValidator } from '../protocols/emailValidator'
+import { EmailValidator } from '../protocols/'
 // Aqui teve uma sacada de gênio, ele tipou o retorno do makeSut
 // para no teste do email ele poder colocar como false
 interface SutTypes {
